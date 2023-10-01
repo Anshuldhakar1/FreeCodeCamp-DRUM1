@@ -1,6 +1,17 @@
 import styles from './app.module.css';
 import { useState, useEffect, useRef } from "react";
 
+// Import your assets
+import Heater1 from '/src/assets/Heater-1.mp3';
+import Heater2 from '/src/assets/Heater-2.mp3';
+import Heater3 from '/src/assets/Heater-3.mp3';
+import Heater4_1 from '/src/assets/Heater-4_1.mp3';
+import Cev_H2 from '/src/assets/Cev_H2.mp3';
+import Dsc_Oh from '/src/assets/Dsc_Oh.mp3';
+import Kick_n_Hat from '/src/assets/Kick_n_Hat.mp3';
+import RP4_KICK_1 from '/src/assets/RP4_KICK_1.mp3';
+import side_stick_1 from '/src/assets/side_stick_1.mp3';
+
 type AppState = {
   display: string
 };
@@ -20,15 +31,15 @@ export const Main: React.FC = () => {
   const CRef = useRef<HTMLAudioElement>(null);
 
   const drumPads = [
-    { id: 'Q', ref: QRef, src: '/src/assets/Heater-1.mp3' },
-    { id: 'W', ref: WRef, src: '/src/assets/Heater-2.mp3' },
-    { id: 'E', ref: ERef, src: '/src/assets/Heater-3.mp3' },
-    { id: 'A', ref: ARef, src: '/src/assets/Heater-4_1.mp3' },
-    { id: 'S', ref: SRef, src: '/src/assets/Cev_H2.mp3' },
-    { id: 'D', ref: DRef, src: '/src/assets/Dsc_Oh.mp3' },
-    { id: 'Z', ref: ZRef, src: '/src/assets/Kick_n_Hat.mp3' },
-    { id: 'X', ref: XRef, src: '/src/assets/RP4_KICK_1.mp3' },
-    { id: 'C', ref: CRef, src: '/src/assets/side_stick_1.mp3' },
+    { id: 'Q', ref: QRef, src: Heater1 },
+    { id: 'W', ref: WRef, src: Heater2 },
+    { id: 'E', ref: ERef, src: Heater3 },
+    { id: 'A', ref: ARef, src: Heater4_1 },
+    { id: 'S', ref: SRef, src: Cev_H2 },
+    { id: 'D', ref: DRef, src: Dsc_Oh },
+    { id: 'Z', ref: ZRef, src: Kick_n_Hat },
+    { id: 'X', ref: XRef, src: RP4_KICK_1 },
+    { id: 'C', ref: CRef, src: side_stick_1 },
   ];
 
   useEffect(() => {

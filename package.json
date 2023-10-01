@@ -2,10 +2,13 @@
   "name": "fcc",
   "version": "0.0.0",
   "license": "MIT",
+  "homepage": "https://github.com/Anshuldhakar1/FreeCodeCamp-DRUM1",
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "predeploy": "nx build hello-world",
+    "deploy": "gh-pages -d dist/hello-world"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +41,7 @@
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
+    "gh-pages": "^6.0.0",
     "jsdom": "~22.1.0",
     "nx": "16.9.1",
     "prettier": "^2.6.2",

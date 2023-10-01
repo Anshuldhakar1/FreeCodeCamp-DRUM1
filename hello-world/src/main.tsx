@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/FreeCodeCamp-DRUM1">
       <Main />
     </BrowserRouter>
   </StrictMode>
