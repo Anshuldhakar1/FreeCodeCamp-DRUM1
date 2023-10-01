@@ -1,0 +1,40 @@
+.drum-pad {
+    aspect-ratio: 1/1;
+    width: 4rem;
+    padding: 1.5rem;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    background: #ef8686;
+}
+
+.drum-machine {
+    width: max(20rem, 15vw);
+    display: grid;
+    place-items: center;
+}
+
+.display {
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    width: 60%;
+}
+
+.buttons {
+    display: flex;
+    width: 65%;
+    flex-flow: wrap;
+    justify-content: space-around;
+    gap: .5rem;
+}
+
+#buttons {}
+
+.clip {}
