@@ -3,15 +3,15 @@ import styles from './app.module.css';
 
 import { useEffect, useRef, useState } from 'react';
 
-import Heater1 from '/src/assets/Heater-1.mp3';
-import Heater2 from '/src/assets/Heater-2.mp3';
-import Heater3 from '/src/assets/Heater-3.mp3';
-import Heater4_1 from '/src/assets/Heater-4_1.mp3';
-import Cev_H2 from '/src/assets/Cev_H2.mp3';
-import Dsc_Oh from '/src/assets/Dsc_Oh.mp3';
-import Kick_n_Hat from '/src/assets/Kick_n_Hat.mp3';
-import RP4_KICK_1 from '/src/assets/RP4_KICK_1.mp3';
-import side_stick_1 from '/src/assets/side_stick_1.mp3';
+import Heater1 from '../assets/Heater-1.mp3';
+import Heater2 from '../assets/Heater-2.mp3';
+import Heater3 from '../assets/Heater-3.mp3';
+import Heater4_1 from '../assets/Heater-4_1.mp3';
+import Cev_H2 from '../assets/Cev_H2.mp3';
+import Dsc_Oh from '../assets/Dsc_Oh.mp3';
+import Kick_n_Hat from '../assets/Kick_n_Hat.mp3';
+import RP4_KICK_1 from '../assets/RP4_KICK_1.mp3';
+import side_stick_1 from '../assets/side_stick_1.mp3';
 
 type AppState = {
 	display: string
@@ -55,14 +55,14 @@ export const App: React.FC = () => {
 		let audio:HTMLAudioElement | null = null;
 		switch (id) {
 			case 'Q': audio = QRef.current; break;
-			case 'W': audio = QRef.current; break;
-			case 'E': audio = QRef.current; break;
-			case 'A': audio = QRef.current; break;
-			case 'S': audio = QRef.current; break;
-			case 'D': audio = QRef.current; break;
-			case 'Z': audio = QRef.current; break;
-			case 'X': audio = QRef.current; break;
-			case 'C': audio = QRef.current; break;
+			case 'W': audio = WRef.current; break;
+			case 'E': audio = ERef.current; break;
+			case 'A': audio = ARef.current; break;
+			case 'S': audio = SRef.current; break;
+			case 'D': audio = DRef.current; break;
+			case 'Z': audio = ZRef.current; break;
+			case 'X': audio = XRef.current; break;
+			case 'C': audio = CRef.current; break;
 		}
 		if (audio) {
 			if (!audio.paused) {

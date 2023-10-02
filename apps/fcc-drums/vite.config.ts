@@ -5,6 +5,8 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 export default defineConfig({
   cacheDir: '../../node_modules/.vite/fcc-drums',
 
+  base: 'FreeCodeCamp-DRUM1',
+
   server: {
     port: 4200,
     host: 'localhost',
